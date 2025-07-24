@@ -61,3 +61,85 @@
 .banner-image{
   width: 45%;
 }
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-image{
+        width: 100%;
+        
+    }
+    .banner-content{
+        margin-left: 100px auto;
+        text-align: left;
+    }
+    .display{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+}
+
+
+.plant{
+    text-align: center;
+}
+.plant-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.plant-description{
+    font-size: 22px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.square-collage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    row-gap: 5px;
+    text-align: center;
+    margin-bottom: 0 auto;
+    height: calc(100%-5px);
+}
+.secondary{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 26px 80px;
+    border: none;
+}
+.lily{
+    text-align: center;
+    font-size: 22px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .square-collage{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+.features{
+    display: flex;
+    gap: 100px;
+    margin-top: 20%;
+    justify-content: center;
+}
+.section-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.section-description{
+    font-size: 22px;
+}
