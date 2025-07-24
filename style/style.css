@@ -143,3 +143,30 @@ main{
 .section-description{
     font-size: 22px;
 }
+.badge{
+    width: 286px;
+    height: 286px;
+    margin-left: -160px;
+    margin-right: -50px;
+    margin-top: -100px;
+}
+.badged{
+    display: flex;
+    /* margin-left: -100px; */
+    /* margin-right: -100px; */
+}
+@media screen and (max-width: 576px) {
+    .badge{
+        display: none;
+    }
+    .features{
+        flex-direction: column;
+        
+    }
+    .badged{
+        width: 100%;
+    }
+    .boy{
+        width: 100%;
+    }
+}
