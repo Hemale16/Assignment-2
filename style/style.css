@@ -220,3 +220,30 @@ form{
     text-align: center;
     }
 }
+.logo-description{
+    font-size: 22px;
+}
+.logo-links{
+    list-style: none; 
+    text-decoration: none;
+    gap: 32px;
+    justify-content: space-around;
+}
+.footer{
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+.logo-icon{
+    gap: 20px;
+    justify-content: space-between;
+}
+.logo-title{
+    justify-content: space-between;
+    text-decoration: none;
+    color: #8987A1;
+    grid-auto-rows: auto;
+}
