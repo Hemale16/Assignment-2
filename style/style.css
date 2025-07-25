@@ -216,29 +216,47 @@ form input[type="email"]{
 .logo-description{
     font-size: 22px;
 }
+.logo-icon{
+    margin-bottom: auto;
+}
 .logo-links{
     list-style: none; 
     text-decoration: none;
-    gap: 32px;
-    justify-content: space-around;
+    align-items: center;
 }
 .footer{
     display: flex;
-    gap: 50px;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: space-evenly;   
     margin-top: 10%;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
+    align-items: center;
+    
 }
-.logo-icon{
-    gap: 20px;
-    justify-content: space-between;
+.nav-column{
+  display: flex;
+  flex-direction: column;
+  gap: 50px; 
+  font-size: 16px;
+  text-align: left;
+  margin-left: 100px auto;
 }
-.logo-title{
-    justify-content: space-between;
+.nav-column-2{
+    display: flex;
+  flex-direction: column;
+  gap: 40px; 
+  font-size: 16px;
+  text-align: left;
+  justify-content: left;
+}
+.icon-row{
+    gap: 105px;
+    align-items: center;
+    margin-right: 10%;
+}
+.logo-title {    
     text-decoration: none;
     color: #8987A1;
-    grid-auto-rows: auto;
+    
 }
 @media screen and (max-width: 576px) {
     .btn-third{
@@ -261,10 +279,14 @@ form input[type="email"]{
 }
 @media screen and (max-width: 576px) {
     .footer{
-        
-        
+        flex-direction: column;
+        text-align: left;
+        gap: 29px;
+        margin-left: 100px auto;
+        margin-right: 50%;
     }
-    .logo-links{
+    .logo-title{
         
+     
     }
 }
