@@ -68,6 +68,7 @@
     }
     .banner-image{
         width: 100%;
+        margin-right: auto;
         
     }
     .banner-content{
@@ -94,7 +95,7 @@
     font-size: 22px;
 }
 main{
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .square-collage{
@@ -129,6 +130,9 @@ main{
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
+}
+.plant{
+    justify-content: center;
 }
 .features{
     display: flex;
@@ -170,55 +174,44 @@ main{
         width: 100%;
     }
 }
+.join-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
 .join-section{
     background-image: url(../assets/news-letter-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 100px;
-    min-height: 100vh;
-  padding: 100px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.join-title{
-    font-weight: bold;
-    font-size: 50px;
-    color: #FFFFFF;
-    text-align: center;
-}
-form input[type="email"]{   
-    background-color: #FFFFFF;   
+    margin-top: 200px;
+    margin-left: -2%;
     width: 100%;
-    font-size: 20px;   
-    border: none;
-}
-form{ 
-    display: flex; 
-  
+    height: 50vh;
+    padding: 20px 20px;
 }
 .form-column{
-    width: 100%;
-    padding: 8px 20px;
+    text-align: center;
+}
+form input[type="email"]{
     border: none;
+    width: 830px;
+    height: 50px;
+    background-color: #FFFFFF;
+    padding: 8px 20px;
+    margin-right:-3px;
+    font-size: 16px;
+    color: #8987A1;
 }
 .btn-third{
+    background-color: #E95A08;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
-    background-color: #E95A08;
-    padding: 19px 54px;
+    padding: 26px 50px;
     border: none;
-    color: #FFFFFF;
-}
-@media  screen and (max-width: 576px) {
-    join-title{
-    font-weight: 500;
-    font-size: 5px;
-    color: #FFFFFF;
-    text-align: center;
-    }
+    cursor: pointer;
 }
 .logo-description{
     font-size: 22px;
@@ -246,4 +239,32 @@ form{
     text-decoration: none;
     color: #8987A1;
     grid-auto-rows: auto;
+}
+@media screen and (max-width: 576px) {
+    .btn-third{
+        font-size: 16px;
+        width: 173px;
+        height: 69px;
+        font-weight: 700;
+        padding: 26px 50px;
+    }
+    form input[type="email"]{
+    border: none;
+    width: 218px;
+    height: 50px;
+    padding: 8px 20px;
+    font-size: 16px;    
+}
+    .join-title{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer{
+        
+        
+    }
+    .logo-links{
+        
+    }
 }
